@@ -10,7 +10,7 @@ Policies and Applications.
 * OpenShift GitOps (Argo CD)
 * Fork of the repository
 * Clusters (for import) or Cloud Provider (for provisioning)
-* Subscription Admin role. (Connect to your hub and run the `./makeAppSubAdmin` script
+* Subscription Admin role. (Connect to your hub and run the following policy [policy-configure-subscription-admin-hub.yaml](https://github.com/open-cluster-management/policy-collection/blob/main/community/CM-Configuration-Management/policy-configure-subscription-admin-hub.yaml)
 
 ## What makes it work
 The key is identifying clusters for delivery of resources. In Kubernetes resources are Configuration, Policy compliance, and Applications.  This is 
@@ -26,7 +26,7 @@ of Open Cluster Management configuration policies, Open Cluster Management secur
 ![Subscribing your orchestration resources](.images/Subscribe-Orchestration-Resources.png)
 
 ### Get started
-* First make sure you as a Subscription-Admin. This can be done by connetion to the ACM Hub via the `oc` cli, and then running the `./makeAppSubAdmin` script (no additional parameters required).
+* First make sure you as a Subscription-Admin. (Connect to your hub and run the following policy [policy-configure-subscription-admin-hub.yaml](https://github.com/open-cluster-management/policy-collection/blob/main/community/CM    -Configuration-Management/policy-configure-subscription-admin-hub.yaml)
 * On the hub cluster subscribe this repositories `./seeds` folder. This will start to apply Configuration, Security Policies and Applications.
 (You can use a Subscription or Argo CD Application for this)
 * Once the Subscriptions, ApplicationSets and Policies are applied to the hub if you already have clusters available, they may start to be configured and prepared,
